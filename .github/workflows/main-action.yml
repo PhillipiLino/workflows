@@ -5,7 +5,7 @@ on:
 
 jobs:
   workflow-1:
-    uses: PhillipiLino/bibliotecaFlutter/.github/workflows/second-action.yml@main
+    uses: PhillipiLino/workflows/.github/workflows/second-action.yml@main
 
   # workflow-2:
   #   uses: GuillaumeFalourd/poc-github-actions/.github/workflows/48-reusable-workflow-2.yml@main
