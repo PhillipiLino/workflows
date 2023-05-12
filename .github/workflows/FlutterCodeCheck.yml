@@ -1,5 +1,7 @@
 name: Flutter App Code Check
-on: [pull_request]
+
+on:
+  workflow_call:
 
 jobs:
   build:
