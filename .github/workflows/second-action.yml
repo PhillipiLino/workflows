@@ -13,7 +13,7 @@ jobs:
           sleep 4
           echo "Hello World"
       
-      - run: gh pr create --title "The fix" --body "This fixes the issue"
+      - run: gh pr create --label "label" --title "title" --body "body" --base base --head head
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
