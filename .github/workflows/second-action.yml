@@ -7,10 +7,15 @@ jobs:
   job-reusable-3:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - run: |
-          echo "Waiting 10 seconds..."
-          sleep 10
+          echo "Waiting 4 seconds..."
+          sleep 4
           echo "Hello World"
+      
+      - run: gh pr create --title "The fix" --body "This fixes the issue"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   run-main-job:
     uses: PhillipiLino/workflows/.github/workflows/main-job.yml@main
